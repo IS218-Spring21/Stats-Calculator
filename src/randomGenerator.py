@@ -56,3 +56,18 @@ class RandomGenerators:
         random.seed(seed)
         return RandomGenerators.randItemFromList(array)
 
+    # Select N number of items from a list without a seed
+    @staticmethod
+    def randItemsFromList(array, n):
+        random.seed()
+        if n > len(array):
+            return "ERROR: The array does not have "+n+" items"
+        else:
+            list = []
+            #tempList = array
+            for i in range(n):
+                #randomItem = RandomGenerators.randItemFromList(tempList)
+                randomItem = RandomGenerators.randItemFromList(array)
+                list.append(randomItem)
+                array.remove(randomItem)
+            return list

@@ -50,6 +50,14 @@ class MyTestCase(unittest.TestCase):
         print("Random Item from list:")
         print(randomItemFromList)
 
+    def test_random_items_from_list(self):
+        print("*" * 10 + "Random Items From List Test" + "*" * 10)
+        randomList = RandomGenerators.ranNumBySeedList(0, 500, RandomGenerators.randNum(0,100), 10)
+        numItemsFromList = 7
+        print("List of Items:")
+        print(randomList)
+        print("Random Items from list:")
+        print(RandomGenerators.randItemsFromList(randomList, numItemsFromList))
 
 
 
