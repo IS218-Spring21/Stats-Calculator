@@ -71,3 +71,21 @@ class RandomGenerators:
                 list.append(randomItem)
                 array.remove(randomItem)
             return list
+
+    # Select N number of items from a list with a seed
+    @staticmethod
+    def randItemsBySeedFromList(array, n, seed):
+        random.seed(seed)
+        if n > len(array):
+            return "ERROR: The array does not have "+ str(n) +" items"
+        else:
+            list = []
+            tempList = []
+            for item in array:
+                tempList.append(item)
+            for i in range(n):
+                #randomItem = RandomGenerators.randItemFromList(tempList)
+                randomItem = RandomGenerators.randItemFromList(tempList)
+                list.append(randomItem)
+                tempList.remove(randomItem)
+            return list
