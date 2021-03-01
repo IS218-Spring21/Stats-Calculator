@@ -13,3 +13,9 @@ class RandomGenerators:
         else:
             return "ERROR: Both value are either not the same type or wrong type in general"
 
+    # Generate a random number with a seed between a range of two numbers - Both Integer and Decimal
+    @staticmethod
+    def randNumBySeed (start, end, seed):
+        random.seed(seed)
+        return RandomGenerators.randNum(start, end)
+
