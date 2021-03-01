@@ -19,3 +19,26 @@ class RandomGenerators:
         random.seed(seed)
         return RandomGenerators.randNum(start, end)
 
+    # Generate a list of N random numbers with a seed and between a range of numbers - Both Integer and Decimal
+    @staticmethod
+    def ranNumBySeedList (start, end, seed, n):
+        isInt = False
+        if (type(start) is int) & (type(end) is int):
+            isInt = True
+        elif (type(start) is float) & (type(end) is float):
+            isInt = False
+        else:
+            return "ERROR: Both value are either not the same type or wrong type in general"
+
+        random.seed(seed)
+        list = [None] * n
+        for i in range(n):
+            if isInt:
+                list[i] = random.randint(start, end)
+            else:
+                list[i] = random.uniform(start, end)
+            # list[i] = RandomGenerators.randNumBySeed(start,end,seed)
+        return list
+
+        # return [random.randint(start, end)] * n
+
