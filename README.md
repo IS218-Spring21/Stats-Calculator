@@ -1,4 +1,5 @@
 # Stats-Calculator
+[![Build Status](https://travis-ci.com/IS218-Spring21/Stats-Calculator.svg?branch=master)](https://travis-ci.com/IS218-Spring21/Stats-Calculator) [![Coverage Status](https://coveralls.io/repos/github/IS218-Spring21/Stats-Calculator/badge.svg)](https://coveralls.io/github/IS218-Spring21/Stats-Calculator)<br>
 A program to calculate Population Sampling and Descriptive Statistics. Also offers a Random Number Generator.
 # Contributers
 [Ido Tanne](https://github.com/itanne99) <br>
