@@ -42,3 +42,17 @@ class RandomGenerators:
 
         # return [random.randint(start, end)] * n
 
+    # Select a random item from a list
+    @staticmethod
+    def randItemFromList(array):
+        if isinstance(array, list):
+            return array[RandomGenerators.randNum(0, len(array)-1)]
+        else:
+            return "ERROR: Variable not Array"
+
+    # Set a seed and randomly select the same value from a list
+    @staticmethod
+    def randItemFromListBySeed(array, seed):
+        random.seed(seed)
+        return RandomGenerators.randItemFromList(array)
+

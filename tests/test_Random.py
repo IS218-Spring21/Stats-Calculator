@@ -40,6 +40,17 @@ class MyTestCase(unittest.TestCase):
         print(randomListInt, RandomGenerators.ranNumBySeedList(startVal, endVal, seed, listSize))
         self.assertEqual(randomListInt, RandomGenerators.ranNumBySeedList(startVal, endVal, seed, listSize))
 
+    def test_random_item_from_list(self):
+        print("*" * 10 + "Random Item From List Test" + "*" * 10)
+        randomList = RandomGenerators.ranNumBySeedList(0, 500, 20, 10)
+        print("Testing random item from list")
+        randomItemFromList = RandomGenerators.randItemFromList(randomList)
+        print("List of Items:")
+        print(randomList)
+        print("Random Item from list:")
+        print(randomItemFromList)
+
+
 
 
 
