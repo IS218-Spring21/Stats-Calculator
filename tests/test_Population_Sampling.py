@@ -61,6 +61,13 @@ class SamplingTestCase(unittest.TestCase):
         print("Sample Size:", res, "\n")
         self.assertEqual(res, 25)
 
+    def test_cochrans(self):
+        print("******test_cochrans******")
+        original_list = random_list()
+        res = Population_Sampling_Calculator.cochrans(original_list)
+        print("Cochrans' Sample Size:", res, "\n")
+        # self.assertEqual(res, 5)
+
 
 if __name__ == '__main__':
     unittest.main()
