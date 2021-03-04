@@ -54,6 +54,13 @@ class SamplingTestCase(unittest.TestCase):
         print("Margin of Error:", res, "\n")
         self.assertEqual(res, 0.41797373220852824)
 
+    def test_sample_size(self):
+        print("******test_sample_size******")
+        original_list = random_list()
+        res = Population_Sampling_Calculator.sample_size(original_list)
+        print("Sample Size:", res, "\n")
+        self.assertEqual(res, 25)
+
 
 if __name__ == '__main__':
     unittest.main()

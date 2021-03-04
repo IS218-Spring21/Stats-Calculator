@@ -1,6 +1,8 @@
 from src.population_sampling_functions import random_sampling
 from src.population_sampling_functions import confidence_interval_for_sample
 from src.population_sampling_functions import margin_error
+from src.population_sampling_functions import sample_size
+
 
 class Population_Sampling_Calculator:
     list = []
@@ -19,5 +21,9 @@ class Population_Sampling_Calculator:
     @staticmethod
     def margin_error(input_list):
         return margin_error.margin_error(input_list)
+
+    @staticmethod
+    def sample_size(input_list):
+        return sample_size.sample_size(input_list)
 
 
