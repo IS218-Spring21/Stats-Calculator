@@ -2,6 +2,7 @@ from src.population_sampling_functions import random_sampling
 from src.population_sampling_functions import confidence_interval_for_sample
 from src.population_sampling_functions import margin_error
 from src.population_sampling_functions import sample_size
+from src.population_sampling_functions import cochrans
 
 
 class Population_Sampling_Calculator:
@@ -25,5 +26,9 @@ class Population_Sampling_Calculator:
     @staticmethod
     def sample_size(input_list):
         return sample_size.sample_size(input_list)
+
+    @staticmethod
+    def cochrans(input_list):
+        return cochrans.cochrans(input_list)
 
 
