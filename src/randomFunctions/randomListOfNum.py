@@ -1,9 +1,9 @@
-from src.randomFunctions.randomNumberBySeed import randNum
+from src.randomFunctions.randomNumberBySeed import randNumBySeed
 
 
-class randListOfNum(randNum):
-    def __init__(self, start, end, n):
-        super().__init__(start, end)
+class randListOfNum(randNumBySeed):
+    def __init__(self, start, end, n, seed):
+        super().__init__(start, end, seed)
         self.n = n
         self.genList = []
         self.generateList()
