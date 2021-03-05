@@ -12,6 +12,6 @@ script:
 
 branches:
   only:
-    - main
+    - population_sampling_functions
 after_success:
   coveralls
