@@ -10,7 +10,7 @@ class randomItemFromList:
 
     def generateChoice(self):
         if not isinstance(self.array, list):
-            return "ERROR: Input not Array"
+            self.output = "ERROR: Input not Array"
         else:
             self.output = random.choice(self.array)
 
