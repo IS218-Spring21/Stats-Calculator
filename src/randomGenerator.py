@@ -1,91 +1,38 @@
 import random
+from src.randomFunctions import randomItemFromList, randomItemFromListBySeed, randomItemsFromList, randomItemsFromListBySeed, randomListOfNum, randomNumber, randomNumberBySeed
 
 class RandomGenerators:
     # Generate a random number without a seed between a range of two numbers - Both Integer and Decimal
-    @staticmethod
-    def randNum (start, end):
-        #If type of start and end is int
-        if (type(start) is int) & (type(end) is int):
-            return random.randint(start, end)
-        #If type of start and end is float
-        if (type(start) is float) & (type(end) is float):
-            return random.uniform(start, end)
-        else:
-            return "ERROR: Both value are either not the same type or wrong type in general"
+    def randNum (self, start, end):
+        return randomNumber.randNum(start, end).getResult()
+
 
     # Generate a random number with a seed between a range of two numbers - Both Integer and Decimal
-    @staticmethod
-    def randNumBySeed (start, end, seed):
-        random.seed(seed)
-        return RandomGenerators.randNum(start, end)
+
+    def randNumBySeed (self, start, end, seed):
+        return randomNumberBySeed.randNumBySeed(start, end, seed).getResult()
 
     # Generate a list of N random numbers with a seed and between a range of numbers - Both Integer and Decimal
-    @staticmethod
-    def ranNumBySeedList (start, end, seed, n):
-        isInt = False
-        if (type(start) is int) & (type(end) is int):
-            isInt = True
-        elif (type(start) is float) & (type(end) is float):
-            isInt = False
-        else:
-            return "ERROR: Both value are either not the same type or wrong type in general"
 
-        random.seed(seed)
-        list = [None] * n
-        for i in range(n):
-            if isInt:
-                list[i] = random.randint(start, end)
-            else:
-                list[i] = random.uniform(start, end)
-            # list[i] = RandomGenerators.randNumBySeed(start,end,seed)
-        return list
-
-        # return [random.randint(start, end)] * n
+    def ranNumBySeedList (self, start, end, n, seed):
+        return randomListOfNum.randListOfNum(start, end, n, seed).getResult()
 
     # Select a random item from a list
-    @staticmethod
-    def randItemFromList(array):
-        if isinstance(array, list):
-            return array[RandomGenerators.randNum(0, len(array)-1)]
-        else:
-            return "ERROR: Variable not Array"
+
+    def randItemFromList(self, array):
+        return randomItemFromList.randomItemFromList(array).getValue()
 
     # Set a seed and randomly select the same value from a list
-    @staticmethod
-    def randItemFromListBySeed(array, seed):
-        random.seed(seed)
-        return RandomGenerators.randItemFromList(array)
+
+    def randItemFromListBySeed(self, array, seed):
+        return randomItemFromListBySeed.randomItemsFromList(array, seed).getValue()
 
     # Select N number of items from a list without a seed
-    @staticmethod
-    def randItemsFromList(array, n):
-        random.seed()
-        if n > len(array):
-            return "ERROR: The array does not have "+n+" items"
-        else:
-            list = []
-            #tempList = array
-            for i in range(n):
-                #randomItem = RandomGenerators.randItemFromList(tempList)
-                randomItem = RandomGenerators.randItemFromList(array)
-                list.append(randomItem)
-                array.remove(randomItem)
-            return list
+
+    def randItemsFromList(self, array, n):
+        return randomItemsFromList.randomItemsFromList(array, n).getValue()
 
     # Select N number of items from a list with a seed
-    @staticmethod
-    def randItemsBySeedFromList(array, n, seed):
-        random.seed(seed)
-        if n > len(array):
-            return "ERROR: The array does not have "+ str(n) +" items"
-        else:
-            list = []
-            tempList = []
-            for item in array:
-                tempList.append(item)
-            for i in range(n):
-                #randomItem = RandomGenerators.randItemFromList(tempList)
-                randomItem = RandomGenerators.randItemFromList(tempList)
-                list.append(randomItem)
-                tempList.remove(randomItem)
-            return list
+
+    def randItemsBySeedFromList(self, array, n, seed):
+        return randomItemsFromListBySeed.randomItemsFromListBySeed(array, n, seed).getValue()
