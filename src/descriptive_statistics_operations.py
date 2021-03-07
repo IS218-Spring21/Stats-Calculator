@@ -1,5 +1,7 @@
 from src.operations.add import add
 from src.operations.divide import divide
+from src.operations.power import power
+from src.operations.root import root
 from src.operations.subtract import subtract
 
 
@@ -8,7 +10,7 @@ class DescriptiveStatisticsOperations:
     def mean(numbers: list) -> float:
         summation = 0.0
         for number in numbers:
-            add(summation, number)
+            summation = add(summation, number)
         return divide(summation, len(numbers))
 
     @staticmethod
