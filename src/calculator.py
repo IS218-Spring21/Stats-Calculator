@@ -2,10 +2,8 @@ from src.allOperations.basicOperations import BasicOperations
 
 
 class Calculator:
-    results = []
-
     def __init__(self):
-        pass
+        self.results = []
 
     def add(self, x, y):
         self.results.append(BasicOperations.addition(x, y))
