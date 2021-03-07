@@ -1,8 +1,4 @@
-from src.operations.add import add
-from src.operations.divide import divide
-from src.operations.power import power
-from src.operations.root import root
-from src.operations.subtract import subtract
+from src.allOperations.basicOperations import BasicOperations
 
 
 class DescriptiveStatisticsOperations:
@@ -10,19 +6,19 @@ class DescriptiveStatisticsOperations:
     def mean(numbers: list) -> float:
         summation = 0.0
         for number in numbers:
-            summation = add(summation, number)
-        return divide(summation, len(numbers))
+            summation = BasicOperations.addition(summation, number)
+        return BasicOperations.division(summation, len(numbers))
 
     @staticmethod
     def median(numbers: list) -> float:
         numbers = sorted(numbers)
         if len(numbers) % 2 == 1:
-            middleIndex = int(divide(len(numbers) - 1, 2))
+            middleIndex = int(BasicOperations.division(len(numbers) - 1, 2))
             median = numbers[middleIndex]
         else:
-            leftMiddleIndex = int(subtract(divide(len(numbers) - 1, 2), 0.5))
-            rightMiddleIndex = int(add(divide(len(numbers) - 1, 2), 0.5))
-            median = divide(add(numbers[leftMiddleIndex], numbers[rightMiddleIndex]), 2)
+            leftMiddleIndex = int(BasicOperations.subtraction(BasicOperations.division(len(numbers) - 1, 2), 0.5))
+            rightMiddleIndex = int(BasicOperations.addition(BasicOperations.division(len(numbers) - 1, 2), 0.5))
+            median = BasicOperations.division(BasicOperations.addition(numbers[leftMiddleIndex], numbers[rightMiddleIndex]), 2)
         return float(median)
 
     @staticmethod
@@ -44,13 +40,13 @@ class DescriptiveStatisticsOperations:
         mean = DescriptiveStatisticsOperations.mean(numbers)
         squaredDifferences = []
         for number in numbers:
-            squaredDifferences.append(power(subtract(mean, number), 2))
-        variance = divide(sum(squaredDifferences), subtract(len(numbers), 1))
+            squaredDifferences.append(BasicOperations.square(BasicOperations.subtraction(mean, number)))
+        variance = BasicOperations.division(sum(squaredDifferences), BasicOperations.subtraction(len(numbers), 1))
         return variance
 
     @staticmethod
     def standardDeviation(numbers: list) -> float:
-        standardDeviation = root(DescriptiveStatisticsOperations.variance(numbers), 2)
+        standardDeviation = BasicOperations.squareRoot(DescriptiveStatisticsOperations.variance(numbers))
         return standardDeviation
 
     @staticmethod
@@ -59,6 +55,5 @@ class DescriptiveStatisticsOperations:
         standardDeviation = DescriptiveStatisticsOperations.standardDeviation(numbers)
         mean = DescriptiveStatisticsOperations.mean(numbers)
         for number in numbers:
-            zScores.append(divide(subtract(number, mean), standardDeviation))
+            zScores.append(BasicOperations.division(BasicOperations.subtraction(number, mean), standardDeviation))
         return zScores
-
