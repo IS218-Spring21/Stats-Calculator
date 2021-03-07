@@ -53,3 +53,12 @@ class DescriptiveStatisticsOperations:
         standardDeviation = root(DescriptiveStatisticsOperations.variance(numbers), 2)
         return standardDeviation
 
+    @staticmethod
+    def zScore(numbers: list) -> list:
+        zScores = []
+        standardDeviation = DescriptiveStatisticsOperations.standardDeviation(numbers)
+        mean = DescriptiveStatisticsOperations.mean(numbers)
+        for number in numbers:
+            zScores.append(divide(subtract(number, mean), standardDeviation))
+        return zScores
+
