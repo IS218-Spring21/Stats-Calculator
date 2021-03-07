@@ -1,11 +1,11 @@
 from src.allOperations.population_sampling_operations import PopulationSamplingOperations
+from src.calculator import Calculator
 
 
-class Population_Sampling_Calculator:
-    results = []
+class Population_Sampling_Calculator(Calculator):
 
     def __init__(self):
-        self.results = []
+        Calculator.__init__(self)
 
     def random_sampling(self, input_list, new_list_length, seed_num):
         self.results.append(PopulationSamplingOperations.sample_list(input_list, new_list_length, seed_num))
