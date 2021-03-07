@@ -23,4 +23,17 @@ class DescriptiveStatisticsOperations:
             median = divide(add(numbers[leftMiddleIndex], numbers[rightMiddleIndex]), 2)
         return float(median)
 
+    @staticmethod
+    def mode(numbers: list) -> float:
+        dictionary = {}
+        for number in numbers:
+            if number in dictionary.keys():
+                dictionary[number] += 1
+            else:
+                dictionary[number] = 1
+        mode = 0
+        for number in dictionary.keys():
+            if dictionary[number] > mode:
+                mode = number
+        return float(mode)
 
