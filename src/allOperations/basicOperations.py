@@ -6,18 +6,21 @@ class BasicOperations:
 
     @staticmethod
     def subtraction(x, y):
-        result = float(y) - float(x)
+        result = float(x) - float(y)
         return result
 
     @staticmethod
     def multiplication(x, y):
-        result = y * x
+        result = x * y
         return result
 
     @staticmethod
     def division(x, y):
-        result = float(y) / float(x)
-        return result
+        try:
+            result = float(x) / float(y)
+            return result
+        except ZeroDivisionError:
+            raise ZeroDivisionError
 
     @staticmethod
     def square(x):
