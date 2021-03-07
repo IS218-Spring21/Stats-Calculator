@@ -39,3 +39,17 @@ class DescriptiveStatisticsOperations:
                 mode = number
         return float(mode)
 
+    @staticmethod
+    def variance(numbers: list) -> float:
+        mean = DescriptiveStatisticsOperations.mean(numbers)
+        squaredDifferences = []
+        for number in numbers:
+            squaredDifferences.append(power(subtract(mean, number), 2))
+        variance = divide(sum(squaredDifferences), subtract(len(numbers), 1))
+        return variance
+
+    @staticmethod
+    def standardDeviation(numbers: list) -> float:
+        standardDeviation = root(DescriptiveStatisticsOperations.variance(numbers), 2)
+        return standardDeviation
+
