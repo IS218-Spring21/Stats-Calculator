@@ -22,18 +22,24 @@ class DescriptiveStatisticsOperations:
         return float(median)
 
     @staticmethod
-    def mode(numbers: list) -> float:
+    def modes(numbers: list) -> list:
         dictionary = {}
         for number in numbers:
             if number in dictionary.keys():
                 dictionary[number] += 1
             else:
                 dictionary[number] = 1
-        mode = 0
+
+        maxOccurrences = 0
+        for number in numbers:
+            if dictionary[number] > maxOccurrences:
+                maxOccurrences = dictionary[number]
+
+        modes = []
         for number in dictionary.keys():
-            if dictionary[number] > mode:
-                mode = number
-        return float(mode)
+            if dictionary[number] == maxOccurrences:
+                modes.append(number)
+        return modes
 
     @staticmethod
     def variance(numbers: list) -> float:
@@ -41,7 +47,7 @@ class DescriptiveStatisticsOperations:
         squaredDifferences = []
         for number in numbers:
             squaredDifferences.append(BasicOperations.square(BasicOperations.subtraction(mean, number)))
-        variance = BasicOperations.division(sum(squaredDifferences), BasicOperations.subtraction(len(numbers), 1))
+        variance = BasicOperations.division(sum(squaredDifferences), len(numbers))
         return variance
 
     @staticmethod

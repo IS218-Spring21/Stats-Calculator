@@ -15,8 +15,8 @@ class DescriptiveStatisticsCalculator(Calculator):
         self.results.append(DescriptiveStatisticsOperations.median(input_list))
         return self.results[-1]
 
-    def mode(self, input_list: list) -> float:
-        self.results.append(DescriptiveStatisticsOperations.mode(input_list))
+    def modes(self, input_list: list) -> list:
+        self.results.append(DescriptiveStatisticsOperations.modes(input_list))
         return self.results[-1]
 
     def variance(self, input_list: list) -> float:
@@ -24,7 +24,7 @@ class DescriptiveStatisticsCalculator(Calculator):
         return self.results[-1]
 
     def standardDeviation(self, input_list: list) -> float:
-        self.results.append(DescriptiveStatisticsOperations.zScore(input_list))
+        self.results.append(DescriptiveStatisticsOperations.standardDeviation(input_list))
         return self.results[-1]
 
     def zScores(self, input_list: list) -> list:
