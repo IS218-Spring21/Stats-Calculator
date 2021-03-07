@@ -14,11 +14,13 @@ class DescriptiveStatisticsOperations:
     @staticmethod
     def median(numbers: list) -> float:
         numbers = sorted(numbers)
-        if len(numbers) % 2 == 0:
-            middleIndex = subtract(divide(len(numbers), 2), 1)
+        if len(numbers) % 2 == 1:
+            middleIndex = int(divide(len(numbers) - 1, 2))
             median = numbers[middleIndex]
         else:
-            leftMiddleIndex = subtract(divide(len(numbers), 2), 1.5)
-            rightMiddleIndex = add(divide(len(numbers), 2), 1.5)
+            leftMiddleIndex = int(subtract(divide(len(numbers) - 1, 2), 0.5))
+            rightMiddleIndex = int(add(divide(len(numbers) - 1, 2), 0.5))
             median = divide(add(numbers[leftMiddleIndex], numbers[rightMiddleIndex]), 2)
-        return median
+        return float(median)
+
+
