@@ -21,7 +21,7 @@ def random_list():
 class SamplingTestCase(unittest.TestCase):
     # original_list = []
     # seedNum = 0
-    '''
+    """
     def setUp(self) -> None:
         random.seed(5)
         print("j")
@@ -29,7 +29,7 @@ class SamplingTestCase(unittest.TestCase):
         self.original_list = randint(0, 50, 15)
 
         for x in range(10):
-            self.original_list.append(float(random.randint(30, 50)))'''
+            self.original_list.append(float(random.randint(30, 50)))"""
 
     def test_random_sampling(self):
         print("******test_random_sampling******")
