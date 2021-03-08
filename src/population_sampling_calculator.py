@@ -8,7 +8,7 @@ class Population_Sampling_Calculator(Calculator):
         Calculator.__init__(self)
 
     def random_sampling(self, input_list, new_list_length, seed_num):
-        self.results.append(PopulationSamplingOperations.sample_list(input_list, new_list_length, seed_num))
+        self.results.append(PopulationSamplingOperations.sample_list(input_list, new_list_length))
         return self.results[-1]
 
     def confidence_interval_for_sample(self, confidence, sample_list):

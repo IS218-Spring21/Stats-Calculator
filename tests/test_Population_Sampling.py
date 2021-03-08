@@ -32,7 +32,7 @@ class SamplingTestCase(unittest.TestCase):
     def test_random_sampling(self):
         print("******test_random_sampling******")
         original_list = random_list()
-        sample_list = Population_Sampling_Calculator.random_sampling(original_list, 8, seedNum)
+        sample_list = Population_Sampling_Calculator.random_sampling(original_list, 8)
         print("Random Sample List")
         print(sample_list,"\n")
         self.assertEqual(sample_list, [41.0, 50.0, 47.0, 43.0, 42.0, 49.0, 47.0, 43.0])
@@ -41,7 +41,7 @@ class SamplingTestCase(unittest.TestCase):
     def test_confidence_interval_for_sample(self):
         print("******test_random_sampling******")
         original_list = random_list()
-        sample_list = Population_Sampling_Calculator.random_sampling(original_list, len(original_list), seedNum)
+        sample_list = Population_Sampling_Calculator.random_sampling(original_list, len(original_list))
         result = Population_Sampling_Calculator.confidence_interval_for_sample(0.9, sample_list)
         print("Confidence Interval for Sample List")
         print(result,"\n")
