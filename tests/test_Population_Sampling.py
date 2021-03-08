@@ -11,7 +11,11 @@ for x in range(50):
 
 
 class SamplingTestCase(unittest.TestCase):
-    calc_obj = Population_Sampling_Calculator()
+    def setUp(self) -> None:
+        self.calc_obj = Population_Sampling_Calculator()
+
+    def testInstantiateCalculator(self):
+        self.assertIsInstance(self.calc_obj, Population_Sampling_Calculator)
 
     def test_random_sampling(self):
         print("******test_random_sampling******")
@@ -46,6 +50,10 @@ class SamplingTestCase(unittest.TestCase):
         res = self.calc_obj.cochrans(original_list)
         print("Cochrans' Sample Size:", res, "\n")
         # self.assertEqual(res, 5)
+
+    def testResultProperty(self):
+        self.calc_obj.results.clear()
+        self.assertEqual(self.calc_obj.results, [])
 
 
 if __name__ == '__main__':
