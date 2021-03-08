@@ -49,7 +49,7 @@ class SamplingTestCase(unittest.TestCase):
         print("******test_cochrans******")
         res = self.calc_obj.cochrans(original_list)
         print("Cochrans' Sample Size:", res, "\n")
-        # self.assertEqual(res, 5)
+        self.assertEqual(res, 5)
 
     def testResultProperty(self):
         self.calc_obj.results.clear()
