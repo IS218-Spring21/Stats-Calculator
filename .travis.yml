@@ -12,6 +12,6 @@ script:
 
 branches:
   only:
-     descriptive_statistics_functions
+     master
 after_success:
   coveralls
