@@ -1,6 +1,6 @@
 # Stats-Calculator
-[![Build Status](https://travis-ci.com/IS218-Spring21/Stats-Calculator.svg?branch=population_sampling_functions)](https://travis-ci.com/IS218-Spring21/Stats-Calculator)
-[![Coverage Status](https://coveralls.io/repos/github/IS218-Spring21/Stats-Calculator/badge.svg?branch=population_sampling_functions)](https://coveralls.io/github/IS218-Spring21/Stats-Calculator?branch=population_sampling_functions) <br>
+[![Build Status](https://travis-ci.com/IS218-Spring21/Stats-Calculator.svg?branch=master)](https://travis-ci.com/IS218-Spring21/Stats-Calculator)
+[![Coverage Status](https://coveralls.io/repos/github/IS218-Spring21/Stats-Calculator/badge.svg?branch=master)](https://coveralls.io/github/IS218-Spring21/Stats-Calculator?branch=master) <br>
 A program to calculate Population Sampling and Descriptive Statistics. Also offers a Random Number Generator.
 # Contributers
 [Ido Tanne](https://github.com/itanne99) <br>
