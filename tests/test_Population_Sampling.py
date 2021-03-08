@@ -19,17 +19,6 @@ def random_list():
 
 class SamplingTestCase(unittest.TestCase):
     calc_obj = Population_Sampling_Calculator()
-    # original_list = []
-    # seedNum = 0
-    """
-    def setUp(self) -> None:
-        random.seed(5)
-        print("j")
-        self.seedNum = 5
-        self.original_list = randint(0, 50, 15)
-
-        for x in range(10):
-            self.original_list.append(float(random.randint(30, 50)))"""
 
     def test_random_sampling(self):
         print("******test_random_sampling******")
