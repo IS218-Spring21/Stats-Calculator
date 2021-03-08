@@ -22,7 +22,7 @@ class SamplingTestCase(unittest.TestCase):
         sample_list = self.calc_obj.random_sampling(original_list, 8)
         print("Random Sample List")
         print(sample_list, "\n")
-        self.assertEqual(sample_list, [45.0, 47.0, 46.0, 41.0, 49.0, 50.0, 44.0, 43.0])
+        self.assertEqual(sample_list, [49.0, 44.0, 42.0, 46.0, 43.0, 47.0, 50.0, 49.0])
         # [41.0, 50.0, 47.0, 43.0, 42.0, 49.0, 47.0, 43.0]
 
     def test_confidence_interval_for_sample(self):
