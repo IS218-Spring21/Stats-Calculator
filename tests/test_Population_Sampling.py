@@ -1,6 +1,5 @@
 import unittest
 import random
-from numpy.random import randint
 
 from src.population_sampling_calculator import Population_Sampling_Calculator
 
