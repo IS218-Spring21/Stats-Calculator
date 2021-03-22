@@ -8,15 +8,19 @@ A program to calculate Population Sampling and Descriptive Statistics. Also offe
 [Johnny Pillacela](https://github.com/JohnnyPillacela)
 # Diagram
 DescriptiveStatisticsCalculatorObject
-&nbsp;&nbsp;Properties
-&nbsp;&nbsp;&nbsp;&nbsp;Result
-&nbsp;&nbsp;Methods
-&nbsp;&nbsp;&nbsp;&nbsp;mean -> Calls @staticmethod DescriptiveStatisticsOperations.mean src/allOperations/descriptive_statistics_operations.py
-&nbsp;&nbsp;&nbsp;&nbsp;median -> Calls @staticmethod DescriptiveStatisticsOperations.median src/allOperations/descriptive_statistics_operations.py
-&nbsp;&nbsp;&nbsp;&nbsp;modes -> Calls @staticmethod DescriptiveStatisticsOperations.modes src/allOperations/descriptive_statistics_operations.py
-&nbsp;&nbsp;&nbsp;&nbsp;variance -> Calls @staticmethod DescriptiveStatisticsOperations.variance src/allOperations/descriptive_statistics_operations.py
-&nbsp;&nbsp;&nbsp;&nbsp;standardDeviation -> Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation src/allOperations/descriptive_statistics_operations.py
-&nbsp;&nbsp;&nbsp;&nbsp;zSscores -> Calls @staticmethod DescriptiveStatisticsOperations.zSscores src/allOperations/descriptive_statistics_operations.py
+<table>
+<tbody>
+<tr>
+<td>&nbsp;Properties</td>
+<td>&nbsp;Result</td>
+</tr>
+<tr>
+<td>&nbsp;Methods</td>
+<td>&nbsp;mean -&gt; Calls @staticmethod DescriptiveStatisticsOperations.mean src/allOperations/descriptive_statistics_operations.py<br />median -&gt; Calls @staticmethod DescriptiveStatisticsOperations.median src/allOperations/descriptive_statistics_operations.py<br />modes -&gt; Calls @staticmethod DescriptiveStatisticsOperations.modes src/allOperations/descriptive_statistics_operations.py<br />variance -&gt; Calls @staticmethod DescriptiveStatisticsOperations.variance src/allOperations/descriptive_statistics_operations.py<br />standardDeviation -&gt; Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation src/allOperations/descriptive_statistics_operations.py<br />zSscores -&gt; Calls @staticmethod DescriptiveStatisticsOperations.zSscores src/allOperations/descriptive_statistics_operations.py</td>
+</tr>
+</tbody>
+</table>
+<!-- DivTable.com -->
 # Section Break Up
 ### Ido Tanne
  - Random Generator function
