@@ -8,15 +8,15 @@ A program to calculate Population Sampling and Descriptive Statistics. Also offe
 [Johnny Pillacela](https://github.com/JohnnyPillacela)
 # Diagram
 DescriptiveStatisticsCalculatorObject
-  Properties
-    Result
-  Methods
-    mean -> Calls @staticmethod DescriptiveStatisticsOperations.mean src/allOperations/descriptive_statistics_operations.py
-    median -> Calls @staticmethod DescriptiveStatisticsOperations.median src/allOperations/descriptive_statistics_operations.py
-    modes -> Calls @staticmethod DescriptiveStatisticsOperations.modes src/allOperations/descriptive_statistics_operations.py
-    variance -> Calls @staticmethod DescriptiveStatisticsOperations.variance src/allOperations/descriptive_statistics_operations.py
-    standardDeviation -> Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation src/allOperations/descriptive_statistics_operations.py
-    zSscores -> Calls @staticmethod DescriptiveStatisticsOperations.zSscores src/allOperations/descriptive_statistics_operations.py
+&nbsp;&nbsp;Properties
+&nbsp;&nbsp;&nbsp;&nbsp;Result
+&nbsp;&nbsp;Methods
+&nbsp;&nbsp;&nbsp;&nbsp;mean -> Calls @staticmethod DescriptiveStatisticsOperations.mean src/allOperations/descriptive_statistics_operations.py
+&nbsp;&nbsp;&nbsp;&nbsp;median -> Calls @staticmethod DescriptiveStatisticsOperations.median src/allOperations/descriptive_statistics_operations.py
+&nbsp;&nbsp;&nbsp;&nbsp;modes -> Calls @staticmethod DescriptiveStatisticsOperations.modes src/allOperations/descriptive_statistics_operations.py
+&nbsp;&nbsp;&nbsp;&nbsp;variance -> Calls @staticmethod DescriptiveStatisticsOperations.variance src/allOperations/descriptive_statistics_operations.py
+&nbsp;&nbsp;&nbsp;&nbsp;standardDeviation -> Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation src/allOperations/descriptive_statistics_operations.py
+&nbsp;&nbsp;&nbsp;&nbsp;zSscores -> Calls @staticmethod DescriptiveStatisticsOperations.zSscores src/allOperations/descriptive_statistics_operations.py
 # Section Break Up
 ### Ido Tanne
  - Random Generator function
