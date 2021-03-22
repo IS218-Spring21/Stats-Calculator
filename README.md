@@ -51,3 +51,19 @@ A program to calculate Population Sampling and Descriptive Statistics. Also offe
 </tr>
 </tbody>
 </table>
+
+### PopulationSamplingCalculator object
+<table>
+<tbody>
+<tr>
+<td>Methods</td>
+<td>
+random_sampling &rarr; Calls @staticmethod PopulationSamplingOperations.sample_list from src/allOperations/population_sampling_operations.py<br/><br/>
+confidence_interval_for_sample &rarr; Calls @staticmethod PopulationSamplingOperations.confidence_interval_sample from src/allOperations/population_sampling_operations.py<br/><br/>
+margin_error &rarr; Calls @staticmethod PopulationSamplingOperations.margin_error from src/allOperations/population_sampling_operations.py<br/><br/>
+sample_size &rarr; Calls @staticmethod PopulationSamplingOperations.sample_size from src/allOperations/population_sampling_operations.py<br/><br/>
+cochrans &rarr; Calls @staticmethod PopulationSamplingOperations.cochrans from src/allOperations/population_sampling_operations.py<br/><br/>
+</td>
+</tr>
+</tbody>
+</table>
