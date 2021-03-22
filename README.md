@@ -20,7 +20,7 @@ A program to calculate Population Sampling and Descriptive Statistics. Also offe
 [Source Name](https://www.google.com/)
 
 # Diagram
-DescriptiveStatisticsCalculator object
+### DescriptiveStatisticsCalculator object
 <table>
 <tbody>
 <tr>
@@ -33,4 +33,21 @@ DescriptiveStatisticsCalculator object
 </tr>
 </tbody>
 </table>
-<!-- DivTable.com -->
+
+### RandomGenerator object
+<table>
+<tbody>
+<tr>
+<td>Methods</td>
+<td>
+<p>randNum &rarr; Calls randNum class, generates a random number, and returns value.</p>
+<p>randNumBySeed &rarr; Calls randNumBySeed class, generates a random number, and returns value.</p>
+<p>ranNumBySeedList &rarr; Calls&nbsp;ranNumBySeedList class, generates a random number, and returns value.</p>
+<p>randItemFromList &rarr; Calls randItemFromList class, generates a random number, and returns value.</p>
+<p>randItemFromListBySeed &rarr; Calls randItemFromListBySeed class, generates a random number, and returns value.</p>
+<p>randItemsFromList &rarr; Calls randItemsFromList class, generates a random number, and returns value.</p>
+<p>randItemsBySeedFromList &rarr; Calls randItemsBySeedFromList class, generates a random number, and returns value.</p>
+</td>
+</tr>
+</tbody>
+</table>
