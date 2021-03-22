@@ -11,12 +11,12 @@ DescriptiveStatisticsCalculatorObject
 <table>
 <tbody>
 <tr>
-<td>&nbsp;Properties</td>
-<td>&nbsp;Result</td>
+<td>Properties</td>
+<td>Result</td>
 </tr>
 <tr>
-<td>&nbsp;Methods</td>
-<td>&nbsp;mean -&gt; Calls @staticmethod DescriptiveStatisticsOperations.mean from src/allOperations/descriptive_statistics_operations.py<br/><br/>median -&gt; Calls @staticmethod DescriptiveStatisticsOperations.median from src/allOperations/descriptive_statistics_operations.py<br/><br/>modes -&gt; Calls @staticmethod DescriptiveStatisticsOperations.modes from src/allOperations/descriptive_statistics_operations.py<br/><br/>variance -&gt; Calls @staticmethod DescriptiveStatisticsOperations.variance from src/allOperations/descriptive_statistics_operations.py<br/><br/>standardDeviation -&gt; Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation from src/allOperations/descriptive_statistics_operations.py<br/><br/>zSscores -&gt; Calls @staticmethod DescriptiveStatisticsOperations.zSscores from src/allOperations/descriptive_statistics_operations.py</td>
+<td>Methods</td>
+<td>mean -&gt; Calls @staticmethod DescriptiveStatisticsOperations.mean from src/allOperations/descriptive_statistics_operations.py<br/><br/>median -&gt; Calls @staticmethod DescriptiveStatisticsOperations.median from src/allOperations/descriptive_statistics_operations.py<br/><br/>modes -&gt; Calls @staticmethod DescriptiveStatisticsOperations.modes from src/allOperations/descriptive_statistics_operations.py<br/><br/>variance -&gt; Calls @staticmethod DescriptiveStatisticsOperations.variance from src/allOperations/descriptive_statistics_operations.py<br/><br/>standardDeviation -&gt; Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation from src/allOperations/descriptive_statistics_operations.py<br/><br/>zSscores -&gt; Calls @staticmethod DescriptiveStatisticsOperations.zSscores from src/allOperations/descriptive_statistics_operations.py</td>
 </tr>
 </tbody>
 </table>
