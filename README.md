@@ -16,7 +16,7 @@ DescriptiveStatisticsCalculatorObject
 </tr>
 <tr>
 <td>&nbsp;Methods</td>
-<td>&nbsp;mean -&gt; Calls @staticmethod DescriptiveStatisticsOperations.mean src/allOperations/descriptive_statistics_operations.py<br />median -&gt; Calls @staticmethod DescriptiveStatisticsOperations.median src/allOperations/descriptive_statistics_operations.py<br />modes -&gt; Calls @staticmethod DescriptiveStatisticsOperations.modes src/allOperations/descriptive_statistics_operations.py<br />variance -&gt; Calls @staticmethod DescriptiveStatisticsOperations.variance src/allOperations/descriptive_statistics_operations.py<br />standardDeviation -&gt; Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation src/allOperations/descriptive_statistics_operations.py<br />zSscores -&gt; Calls @staticmethod DescriptiveStatisticsOperations.zSscores src/allOperations/descriptive_statistics_operations.py</td>
+<td>&nbsp;mean -&gt; Calls @staticmethod DescriptiveStatisticsOperations.mean src/allOperations/descriptive_statistics_operations.py<br/><br/>median -&gt; Calls @staticmethod DescriptiveStatisticsOperations.median src/allOperations/descriptive_statistics_operations.py<br/><br/>modes -&gt; Calls @staticmethod DescriptiveStatisticsOperations.modes src/allOperations/descriptive_statistics_operations.py<br/><br/>variance -&gt; Calls @staticmethod DescriptiveStatisticsOperations.variance src/allOperations/descriptive_statistics_operations.py<br/><br/>standardDeviation -&gt; Calls @staticmethod DescriptiveStatisticsOperations.standardDeviation src/allOperations/descriptive_statistics_operations.py<br/><br/>zSscores -&gt; Calls @staticmethod DescriptiveStatisticsOperations.zSscores src/allOperations/descriptive_statistics_operations.py</td>
 </tr>
 </tbody>
 </table>
